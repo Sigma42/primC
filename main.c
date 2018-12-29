@@ -15,7 +15,7 @@
     //  (Primzahlen zwischen 1 und Wert)
     //  - Minimal: 10; Maximal: 4294967294
     //  - ".0f" muss am Ende sein
-    #define BIS 4294967294.0f
+    #define BIS 1000000000.0f
 
     // Ausgabe als Text-Datei (Achtung! Kann große Dateien Produzieren!)
     // nach outText Dateipfad:
