@@ -15,7 +15,7 @@
     //  (Primzahlen zwischen 1 und Wert)
     //  - Minimal: 10; Maximal: 4294967294
     //  - ".0f" muss am Ende sein
-    #define BIS 1000000000.0f
+    #define BIS 4294967294.0f
 
     // Ausgabe als Text-Datei (Achtung! Kann große Dateien Produzieren!)
     // nach outText Dateipfad:
@@ -25,7 +25,6 @@
     // nach outByte Dateipfad:
     //#define outByte "prim.data"
 
-    
 
 
     /* !!Ab hier Nichts verändern!! */
@@ -103,7 +102,7 @@ int main() {
         if (pTdata.arr[i]) {
             u_int jb = i*4-2;
             u_int js = i*2-1;
-            u_int ii = ((i * i * 2) - (2 * i) + 1);
+            u_int ii = 2*(i*i-i)+1;
             while (1) {
                 if (ii > pTdata.length) break;
                 pTdata.arr[ii] = 0;
@@ -208,7 +207,7 @@ void *primHelper(void* arg) {
         if (lTdata.arr[i]) {
             u_int jb = i*4-2;
             u_int js = i*2-1;
-            u_int ii = ((i * i * 2) - (2 * i) + 1);
+            u_int ii = 2*(i*i-i)+1;
             while (1) {
                 if (ii > lTdata.length) break;
                 lTdata.arr[ii] = 0;
@@ -229,7 +228,7 @@ void *primHelper2(void* arg) {
         if (lTdata.arr[i]) {
             u_int jb = i*4-2;
             u_int js = i*2-1;
-            u_int ii = ((i * i * 2) - (2 * i) + 1);
+            u_int ii = 2*(i*i-i)+1;
             while (1) {
                 if (ii > lTdata.length) break;
                 lTdata.arr[ii] = 0;
