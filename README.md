@@ -1,12 +1,12 @@
 # primC
 
-#### Primzahlen Rechner
+### DE #### Primzahlen Rechner
 
 Das ist ein auf dem Sieb des Eratosthenes 
 basierendes Primzahlen Rechenprogramm!
 
 
-#### Prime Number Calculator
+### EN #### Prime Number Calculator
 This is a prime number calculation program based on the sieve of Eratosthenes!
 
 
